@@ -11,7 +11,7 @@ pipeline {
     }
 
     environment {
-        TF_VAR_environment = params.TF_VAR_environment
+        TF_VAR_environment = "${params.TF_VAR_environment}"
         // AWS_ACCESS_KEY_ID = credentials('AWS_ACCESS_KEY_ID')
         // AWS_SECRET_ACCESS_KEY = credentials('AWS_SECRET_ACCESS_KEY')
     }
